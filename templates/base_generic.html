@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Resume</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+        <noscript>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+        </noscript>
+        <link href="/static/css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
+        <link href="static/css/mdb.min.css?ver=1.2.1" rel="stylesheet">
+        <link href="static/css/aos.css?ver=1.2.1" rel="stylesheet">
+        <link href="static/css/main.css?ver=1.2.1" rel="stylesheet">
+        <noscript>
+          <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+          </style>
+        </noscript>
+        {% block title %}
+        
+        {% endblock title %}
+        <meta charset="UTF-8">
+
+        {% block style %}
+            
+        {% endblock style %}
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>My Website</h1>
+            <p>this website created by zeynab sadat musavi</p>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown-0">
+                <button class="dropbtn">Dropdown  
+                    <i class="arrow down"></i>
+                </button>
+        <!-- لینک خارجی  -->
+                <div class="dropdown-content-0">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div> 
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        {%block body%}{% endblock %}
+        <div class="footer">
+  
+            <div class="contant-section">
+              <h2 class="h2 fw-light text mb-4">Contact</h2>
+              <div class="row mb-4">
+                <div class="col-md-5 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+                  <div class="mt-1">
+                    <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> +989178857636 </div>
+                    <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> a.a.s.javid0416@gmail.com </div>
+                  </div>
+                  <div class="mt-5 d-print-none"><form action="https://formspree.io/your@email.com" method="POST">
+          <div class="form-outline mb-4">
+            <input type="text" id="name" class="form-control" required="">
+            <label class="form-label" for="name" style="margin-left: 0px;">Name</label>
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 44px;"></div><div class="form-notch-trailing"></div></div></div>
+          <div class="form-outline mb-4">
+            <input type="email" id="email" class="form-control" required="">
+            <label class="form-label" for="email" style="margin-left: 0px;">Email address</label>
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 92px;"></div><div class="form-notch-trailing"></div></div></div>
+          <div class="form-outline mb-4">
+            <textarea class="form-control" style="resize: none;" id="message" rows="4" required=""></textarea>
+            <label class="form-label" for="message" style="margin-left: 0px;">Message</label>
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 61.6px;"></div><div class="form-notch-trailing"></div></div></div>
+          <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
+          </form>
+                  </div>
+                </div>
+                <div class="col-md-7 d-print-none aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3663.1365953138134!2d51.72598001312751!3d32.65649022001659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc49786ce199f3%3A0xbd4d5828b4717fd8!2sJay%20Student%20Dormitory!5e0!3m2!1sen!2s!4v1687293543768!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450"></iframe></div>
+              </div>
+            </div>
+          
+          </div>
+    </body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</html>

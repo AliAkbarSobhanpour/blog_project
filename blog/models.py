@@ -4,6 +4,7 @@ from django.db import models
 # Create your models here.
 
 class Article(models.Model):
+    title = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
     create_date = models.DateField(auto_now=True)
     image = models.ImageField(upload_to="images/")
