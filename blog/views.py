@@ -9,7 +9,7 @@ from .models import Article
 class MainPageView(ListView):
     template_name = "blog/main.html"
     model = Article 
-
+    paginate_by= 4;
 
 
 class ArticlePageView(DetailView):
